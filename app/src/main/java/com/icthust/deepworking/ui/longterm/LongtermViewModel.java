@@ -1,4 +1,4 @@
-package com.example.deepworking.ui.longterm;
+package com.icthust.deepworking.ui.longterm;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

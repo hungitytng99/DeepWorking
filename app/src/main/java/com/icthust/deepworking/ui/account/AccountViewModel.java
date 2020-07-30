@@ -1,4 +1,4 @@
-package com.example.deepworking.ui.account;
+package com.icthust.deepworking.ui.account;
 
 import androidx.lifecycle.ViewModel;
 

@@ -1,4 +1,4 @@
-package com.example.deepworking.ui.account;
+package com.icthust.deepworking.ui.account;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.deepworking.R;
+import com.icthust.deepworking.R;
 
 public class AccountFragment extends Fragment {
 

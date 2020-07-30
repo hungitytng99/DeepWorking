@@ -1,4 +1,4 @@
-package com.example.deepworking.ui.daily;
+package com.icthust.deepworking.ui.longterm;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,17 +9,17 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.deepworking.R;
+import com.icthust.deepworking.R;
 
-public class DailyFragment extends Fragment {
+public class LongtermFragment extends Fragment {
 
-    private DailyViewModel dailyViewModel;
+    private LongtermViewModel longtermViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dailyViewModel =
-                ViewModelProviders.of(this).get(DailyViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_daily, container, false);
+        longtermViewModel =
+                ViewModelProviders.of(this).get(LongtermViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_longterm, container, false);
         return root;
     }
 }

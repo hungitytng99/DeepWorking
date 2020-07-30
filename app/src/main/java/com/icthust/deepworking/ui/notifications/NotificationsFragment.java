@@ -1,4 +1,4 @@
-package com.example.deepworking.ui.notifications;
+package com.icthust.deepworking.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.deepworking.R;
+import com.icthust.deepworking.R;
 
 public class NotificationsFragment extends Fragment {
 
