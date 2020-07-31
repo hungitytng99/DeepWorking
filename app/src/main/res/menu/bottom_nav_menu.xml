@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:id="@+id/navigation_daily"
+        android:icon="@drawable/ic_baseline_view_list_24"
         android:title="@string/title_daily" />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:id="@+id/navigation_longterm"
+        android:icon="@drawable/ic_baseline_view_day_24"
         android:title="@string/title_longterm" />
 
     <item
@@ -17,7 +16,12 @@
         android:title="@string/title_notifications" />
     <item
         android:id="@+id/navigation_account"
-        android:icon="@drawable/ic_baseline_supervisor_account_24"
+        android:icon="@drawable/ic_outline_account_circle_24"
         android:title="@string/title_account" />
+
+    <item
+        android:id="@+id/navigation_score"
+        android:icon="@drawable/ic_baseline_score_24"
+        android:title="@string/title_score" />
 
 </menu>

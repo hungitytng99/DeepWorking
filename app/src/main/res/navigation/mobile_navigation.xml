@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_daily">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_daily"
         android:name="com.icthust.deepworking.ui.daily.DailyFragment"
         android:label="@string/title_daily"
         tools:layout="@layout/fragment_daily" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_longterm"
         android:name="com.icthust.deepworking.ui.longterm.LongtermFragment"
         android:label="@string/title_longterm"
         tools:layout="@layout/fragment_longterm" />
@@ -22,6 +22,7 @@
         android:name="com.icthust.deepworking.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
     <fragment
         android:id="@+id/navigation_account"
         android:name="com.icthust.deepworking.ui.notifications.NotificationsFragment"
