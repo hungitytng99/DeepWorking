@@ -26,6 +26,7 @@ import java.util.Locale;
 /**
  * Created by guojun on 2015/10/20.
  */
+
 public class WeekHeaderView extends View {
     private final static String TAG = "WeekHeaderView";
     private Context mContext;
@@ -194,7 +195,7 @@ public class WeekHeaderView extends View {
         mHeaderWeekLabelPaint.setColor(mHeaderWeekLabelTextColor);
         mHeaderWeekLabelPaint.setTextSize(mHeaderWeekLabelTextSize);
         Rect rect = new Rect();
-        mHeaderWeekLabelPaint.getTextBounds("日", 0, "日".length(), rect);
+        mHeaderWeekLabelPaint.getTextBounds("Mon", 0, "Mon".length(), rect);
         mHeaderWeekLabelPaint.setTypeface(Typeface.DEFAULT_BOLD);
         mHeaderWeekLabelPaint.setTextAlign(Paint.Align.CENTER);
         mHeaderWeekLabelHeight = rect.height();
@@ -203,7 +204,7 @@ public class WeekHeaderView extends View {
         mHeaderDayLabelNormalPaint = new Paint();
         mHeaderDayLabelNormalPaint.setColor(mHeaderDayLabelNormalTextColor);
         mHeaderDayLabelNormalPaint.setTextSize(mHeaderDayLabelTextSize);
-        mHeaderDayLabelNormalPaint.getTextBounds("日", 0, "日".length(), rect);
+        mHeaderDayLabelNormalPaint.getTextBounds("Mon", 0, "Mon".length(), rect);
         mHeaderDayLabelNormalPaint.setTypeface(Typeface.DEFAULT_BOLD);
         mHeaderDayLabelNormalPaint.setTextAlign(Paint.Align.CENTER);
         mHeaderDayLabelHeight = rect.height();
@@ -361,7 +362,7 @@ public class WeekHeaderView extends View {
     public DateTimeInterpreter getDateTimeInterpreter() {
         if (mDateTimeInterpreter == null) {
             mDateTimeInterpreter = new DateTimeInterpreter() {
-                final String[] weekLabels = {"日", "一", "二", "三", "四", "五", "六"};
+                final String[] weekLabels =  {"Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"};//{"日", "一", "二", "三", "四", "五", "六"};
 
                 @Override
                 public String interpretDate(Calendar date) {

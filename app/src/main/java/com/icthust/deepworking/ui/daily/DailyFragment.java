@@ -3,6 +3,7 @@ package com.icthust.deepworking.ui.daily;
 import android.content.Context;
 import android.graphics.RectF;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -90,7 +91,7 @@ public class DailyFragment extends Fragment implements WeekDayView.MonthChangeLi
      * @param shortDate True if the date values should be short.
      */
     private void setupDateTimeInterpreter(final boolean shortDate) {
-        final String[] weekLabels = {"日", "一", "二", "三", "四", "五", "六"};
+        final String[] weekLabels = {"Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"};
         mWeekView.setDateTimeInterpreter(new DateTimeInterpreter() {
             @Override
             public String interpretDate(Calendar date) {
@@ -118,7 +119,7 @@ public class DailyFragment extends Fragment implements WeekDayView.MonthChangeLi
 
     @Override
     public void onEventClick(WeekViewEvent event, RectF eventRect) {
-
+        Log.d(getTag(), "onEventClick"+event.toString());
     }
 
     @Override
@@ -138,7 +139,7 @@ public class DailyFragment extends Fragment implements WeekDayView.MonthChangeLi
     }
 
     @Override
-    public void onSelectedDaeChange(Calendar selectedDate) {
-
+    public void onSelectedDateChange(Calendar selectedDate) {
+        Log.d(getTag(), "onSelectedDateChange"+selectedDate.toString());
     }
 }
